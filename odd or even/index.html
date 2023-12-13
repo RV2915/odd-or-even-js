@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>odd or even number checkout</title>
+</head>
+
+<style>
+    body {
+        background-image: url("bg.jpg");
+    }
+
+    div {
+
+        margin-top: 4rem;
+        margin-left: 4rem;
+
+        height: 250px;
+        width: 340px;
+        text-align: center;
+        text-decoration: none;
+        padding-top: 15px;
+        /* border: 3px solid black; */
+        border-bottom: 3px solid black;
+        border-top: 3px solid black;
+
+        /* width: 330px; */
+        background-color: transparent;
+        /* height: 400px; */
+
+    }
+
+    input {
+        text-decoration: none;
+        width: 25%;
+        /* padding: 5rem; */
+        margin-bottom: 1.5rem;
+        outline: none;
+        border: none;
+        /* border-bottom: 2px solid black; */
+
+    }
+
+    button {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        transition: 3.s ease-in-out;
+    }
+</style>
+
+
+<body>
+    <div>
+        <h1>check odd or even number</h1>
+
+        <p>entetr a number to check if's odd or even: <input type="text" name="" id="data" value=""></p>
+        <span id="showmsg"></span>
+        <button onkeyup="myFunction()">Try it</button>
+    </div>
+    <!-- <p id="demo"></p> -->
+    <!-- <p id=""></p> -->
+
+    <script>
+        function myFunction() {
+            var num = document.getElementById("data").value;
+            alert((num % 2) === 0) {
+                document.getElementById('showmsg').innerHTML = " number  " + num + " is an even number"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
